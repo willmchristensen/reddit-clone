@@ -2,18 +2,23 @@ import '../PostCard.css';
 function PostCard({}){
     return (
         <div className="post-card-container">
-            <div className="votes-and-content">
-                <div className="votes">
+            <div className="votes">
+                <div className="votes-wrapper">
                     <i className="fas fa-arrow-up"></i>
                     <span>123</span>
                     <i className="fas fa-arrow-down"></i>
                 </div>
-                <div className="content">
-                    <h1>content</h1>
-                </div>
+            </div>
+            <div className="title">
+                <h1>title</h1>
             </div>
             <div className="image">
-                <h1>image</h1>
+                <h2>image</h2>
+            </div>
+            <div className="post-data">
+                <span>posted by</span>
+                <span>7 hours ago</span>
+                <span>700</span>
             </div>
         </div>
     )
