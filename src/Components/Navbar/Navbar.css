@@ -1,0 +1,13 @@
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.navbar-container h1{
+    font-size: 2rem;
+}
+.fa-star{
+    font-size: 1.5rem;
+    color:red;
+}
