@@ -1,8 +1,9 @@
+import PostCard from './Components/PostCard/PostCard';
 function App() {
 
   return (
     <>
-      <h1>REDDITCLONE</h1>
+      <PostCard />
     </>
   )
 }
