@@ -1,3 +1,7 @@
+.post-card-wrapper{
+    display: flex;
+    justify-content: center;
+}
 .post-card-container{
     width: 75%;
     height: 100%;
@@ -16,10 +20,14 @@
 }
 .votes-wrapper{
     height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.title{
+/* .title{
     height: 15vh;
-}
+} */
 .image{
     grid-area: c;
     height: 500px;
@@ -29,4 +37,6 @@
 }
 .post-data{
     grid-area: d;
+    display: flex;
+    justify-content: space-between;
 }
