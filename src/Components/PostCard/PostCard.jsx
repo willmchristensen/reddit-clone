@@ -1,4 +1,4 @@
-import '../PostCard.css';
+import './PostCard.css';
 function PostCard({}){
     return (
         <div className="post-card-wrapper">
