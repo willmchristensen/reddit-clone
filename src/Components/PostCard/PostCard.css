@@ -35,6 +35,11 @@
     border: 1px solid red;
     border-radius: 2%;
 }
+.post-image{
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
 .post-data{
     grid-area: d;
     display: flex;

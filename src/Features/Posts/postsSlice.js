@@ -5,7 +5,18 @@ export const fetchPosts = createAsyncThunk(
   async (subreddit) => {
     const response = await fetch(`/api/posts/${subreddit}`);
     const json = await response.json();
-    return json.data.children.map((post) => post.data);
+    return json.data.children.map(({ data }) => ({
+        id: data.id,           // unique post ID
+        title: data.title,     // post title
+        author: data.author,   // post author
+        score: data.score,     // upvotes minus downvotes
+        url: data.url,         // link or image URL
+        selftext: data.selftext, // text content (if any)
+        num_comments: data.num_comments, // number of comments
+        created_utc: data.created_utc,   // timestamp
+        subreddit: data.subreddit,       // subreddit name
+    }));
+
   }
 );
 
