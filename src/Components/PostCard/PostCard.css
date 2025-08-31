@@ -29,9 +29,11 @@
     height: 15vh;
 } */
 .image{
+    display: flex;
+    justify-content: center;
     grid-area: c;
     height: 500px;
-    width: 450px;
+    /* width: 450px; */
     border: 1px solid red;
     border-radius: 2%;
 }
