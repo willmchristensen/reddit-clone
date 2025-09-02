@@ -1,6 +1,7 @@
 import {Routes, Route} from 'react-router-dom';
 import Posts from './Components/Posts/Posts';
 import Navbar from './Components/Navbar/Navbar';
+import PostPage from './Components/PostPage/PostPage';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path= '/' element={<Posts />}/>
+        <Route path='/posts/:id' element={<PostPage/>} />
       </Routes>
     </>
   )
