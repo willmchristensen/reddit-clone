@@ -10,7 +10,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path= '/' element={<Posts />}/>
-        <Route path='/posts/:id' element={<PostPage/>} />
+        <Route path='/posts/:subreddit/:id' element={<PostPage/>} />
       </Routes>
     </>
   )

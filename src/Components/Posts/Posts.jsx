@@ -9,13 +9,14 @@ function Posts(){
     useEffect(() => {
         dispatch(fetchPosts('all'));
     }, [dispatch])
-    console.log('POSTS IN POSTS', posts)
     return (
         <>
             {
                 posts.map((post) => {
                     return (
-                        <PostCard post={post}/>
+                        <PostCard 
+                            post={post}
+                        />
                     )
                 })
             }

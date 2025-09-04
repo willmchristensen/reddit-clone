@@ -3,7 +3,7 @@ import {timeSince} from '../../Utils//timeSince';
 import {Link} from 'react-router-dom';
 function PostCard({post}){
     return (
-        <Link to={`/posts/${post.id}`}>
+        <Link to={`/posts/${post.subreddit}/${post.id}`}>
             <div className="post-card-wrapper">
                 <div className="post-card-container">
                     <div className="votes">
